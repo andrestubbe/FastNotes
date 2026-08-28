@@ -4,6 +4,7 @@
 [![Java 17+](https://img.shields.io/badge/Java-17%2B-orange.svg)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 [![FastJava](https://img.shields.io/badge/Ecosystem-FastJava-brightgreen.svg)](https://github.com/andrestubbe)
 [![Release](https://img.shields.io/badge/Release-0.1.0-blueviolet.svg)](https://github.com/andrestubbe/FastNotes/releases/tag/0.1.0)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010+-lightgrey.svg)]()
 
 **FastNotes** is an ultra-high-throughput Markdown & Obsidian Vault parser and bidirectional knowledge graph engine designed for the **FastJava** low-level systems ecosystem.
 
@@ -73,6 +74,23 @@ It provides single-pass, zero/low-allocation AST extraction of YAML frontmatter,
 
 ---
 
+
+---
+
+## 📑 Table of Contents
+- [Why ](#why-fastnotes)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Performance](#performance)
+- [Real-World Examples](#real-world-examples)
+- [API Quick Reference](#api-quick-reference)
+- [Installation](#installation)
+- [Documentation](#documentation)
+- [Platform Support](#platform-support)
+- [Related Projects](#related-projects)
+- [License](#license)
+
+---
 ## Quick Start
 
 ### 1. Parse a Single Note
@@ -186,3 +204,20 @@ Add JitPack to your `pom.xml`:
 
 FastNotes is released under the **MIT License**.
 Part of the **FastJava** low-level systems and AI retrieval ecosystem.
+
+
+---
+
+## Related Projects
+
+Part of the **FastJava** high-performance ecosystem:
+* [FastCore](https://github.com/andrestubbe/FastCore) — Unified JNI extraction and native library loader
+* [FastANSI](https://github.com/andrestubbe/FastANSI) — Ultra-fast 24-bit TrueColor terminal styling
+* [FastAIRuntime](https://github.com/andrestubbe/FastAIRuntime) — Autonomous agent runtime and process supervisor
+* [FastFileSystem](https://github.com/andrestubbe/FastFileSystem) — Unified mmap indexing and NTFS live sync
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
