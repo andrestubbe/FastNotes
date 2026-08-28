@@ -1,0 +1,27 @@
+FastNotes 0.1.0 // Ultra-High-Throughput Markdown & Obsidian Vault Parser with Bidirectional Graph Linking & Block Indexing in FastJava
+
+🚀 GitHub Repository: https://github.com/andrestubbe/FastNotes
+⚡ FastJava Low-Level Ecosystem: https://github.com/andrestubbe
+
+In this release, we introduce FastNotes: a high-performance Markdown & Obsidian Vault engine written from the ground up for low-latency systems and AI knowledge retrieval.
+
+Key Highlights:
+• Zero-allocation, single-pass procedural parser ($O(N)$ linear time).
+• Full Obsidian syntax support: Wikilinks [[Target|Alias]], block references [[Note#^blockId]], transclusion embeds ![[Note]], callouts > [!NOTE], hierarchical tags #dev/simd, and task lists - [x].
+• Bidirectional link graph with real-time incoming backlinks, orphan detection, ghost link tracking, and PageRank centrality ranking.
+• Sub-microsecond transclusion resolution for instant AI context injection.
+• 120-column FastANSI Hero Terminal Demo.
+• Standardized OpenJDK JMH benchmarks with over 2.4M ops/sec throughput.
+
+TIMESTAMPS:
+0:00 - Introduction & Motivation
+0:45 - The Problem with Traditional Regex Markdown Parsers
+1:30 - FastNotes Single-Pass Architecture
+2:45 - 120-Column Hero Demo Walkthrough
+4:10 - Bidirectional Link Graph & Backlink Resolution
+5:30 - Transclusions & Block-Level Indexing (^blockId)
+6:45 - Topological PageRank & Graph Metrics
+8:00 - JMH Benchmark Results
+9:15 - Getting Started & Maven Setup
+
+#Java #Obsidian #Markdown #GraphAlgorithms #KnowledgeGraph #FastJava #Performance #SystemsProgramming
