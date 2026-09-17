@@ -77,6 +77,13 @@ Standard Markdown parsers (Flexmark, CommonMark) build full AST trees that consu
 2. **Inverted Backlink Graph**: Maintains an instant $O(1)$ bidirectional graph linking notes, ghost links, and orphaned pages.
 3. **Sub-Microsecond Transclusion**: Indexes block anchors (`^blockId`) directly into memory for instant extraction.
 
+| Feature | Flexmark / CommonMark | Obsidian Desktop (Electron) | FastNotes |
+|:---|:---|:---|:---|
+| **Parsing Model** | Heavy AST node object graph | Node.js DOM / Chromium runtime | **Single-pass 0-AST token scanner** |
+| **Vault Backlinks** | Not natively supported | In-memory JS graph (RAM heavy) | **$O(1)$ inverted bidirectional graph** |
+| **Block Transclusion** | Requires full file re-parsing | Asynchronous JS render pass | **Sub-microsecond anchor index (`^id`)** |
+| **Memory / GC Footprint**| Gigabytes of heap on 100k notes| Multi-gigabyte Electron RAM | **Zero GC hot path (FastJava memory)**|
+
 ---
 
 ## Key Features
